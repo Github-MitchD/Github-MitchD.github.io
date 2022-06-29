@@ -1,0 +1,577 @@
+/*********** Site Web Code & Design by ***********/
+/***** Michel Dufour - Développeur Web Junior *****/
+
+/********** GLOBAL CSS **********/
+* {
+    box-sizing: border-box;
+  }
+body{
+    background: #222;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #adb5bd;
+    padding: 0;
+    margin: 0;
+}
+a {
+    transition: all ease-in-out 0.3s;
+}
+.pink {
+    color: #fb5ee7;
+}
+.blue {
+    color: #00b1e5;
+}
+::selection{
+    background: #06abdc;
+    color: #eee;
+}
+
+/* Boutons */
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+.button-port {
+    color: #eee;
+    border: none;
+    border-radius: 0;
+    background: linear-gradient(145deg, #fb5ee7, #00b1e5);
+    text-shadow: 0 0 5px #000;
+    box-shadow: 0 0 10px 0px rgb(0 0 0 / 80%);
+}
+.button-port:hover {
+    color: #fff;
+    background: linear-gradient(45deg, #fb5ee7, #00b1e5);
+    box-shadow: 0 0 3px 0px #000; 
+}
+.button-port .fa-download {
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+/********** NAVBAR **********/
+.bg-dark{
+    background: #222!important;
+    box-shadow: 0 2px 6px 0px #000;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #adb5bd;
+    font-size: 1em;
+    border-width: 1px;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: #2220;
+    padding-top: 7px;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    border-width: 1px;
+    border-bottom: 0;
+    border-style: solid;
+    border-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0), #fb5ee7, rgba(0, 0, 0, 0))100% 1;
+    padding-top: 7px;
+}
+.btn-sm {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+ol, ul {
+    list-style: none;
+    color: #adb5bd;
+}
+
+/**** ALL SECTIONS ****/
+.pre-title{
+    color: #fb5ee7;
+}
+.section-title{
+    font-weight: 200;    
+    color: #dee2e6;
+    text-align: center;
+    padding: 130px 0;
+}
+.section-title2{
+    color: #00b1e5;
+}
+.bg-1{
+    background: #222;
+}
+
+/********** Section Home **********/
+.main-container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./_img/bg-home.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.item {
+    /* Padding is used for smaller screens */
+    padding: 0 30px 0 30px;
+    text-align: center;
+    color: #f8f9fa;
+    text-shadow: 0 0 4px #000;
+}
+.header-title{
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.header-subTitle{
+    font-size: 6em;
+    font-weight: 100;
+}
+.txtAngle {
+    color: #333;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    text-align: center;
+    background: linear-gradient(45deg, #ddd, #fff, #ddd);
+    transform: rotate(-7deg);
+    width: 320px;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 5px;
+    margin: 50px auto;
+    text-shadow: 1px -1px 0px #fff;
+    box-shadow: -1px 3px 10px #000;
+}
+.btn-center {
+    margin: 20px auto;
+}
+
+/********** Section whoIam **********/
+.bg-2{
+    background: #1c1c1c;
+}
+.aProposGauche {
+    background: linear-gradient(80deg, #fb5ee7, #00b1e5);
+    border-radius: 74% 74% 74% 87% / 76% 64% 65% 87%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.md-rounded {
+    width: 100%;
+    height: auto;
+    border-radius: 68% 32% 27% 73% / 60% 62% 38% 40%;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 7px #111;
+}
+.aProposDroite {
+    color: #adb5bd;
+    font-size: 1em;
+}
+.bgSearchMessage {
+    background: #111;
+    margin-top: 50px;
+    padding: 2em;
+}
+.align-right {
+    text-align: right;
+}
+
+/********** Section skills **********/
+#skills {
+    padding-bottom: 100px;
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #111;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}  
+.containerPanel {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}  
+.containerPanel::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -16px;
+    background: linear-gradient(55deg, #fb5ee7, #00b1e5);
+    border: 2px solid #f8f9fa;
+    top: 15px;
+    box-shadow: 0 0 10px #111;
+    border-radius: 50%;
+    z-index: 1;
+}
+.containerPanel ul li {
+    margin-left: -40px;
+} 
+.left {
+    left: 0;
+}  
+.right {
+    left: 50%;
+}  
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #111;
+}  
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #111 transparent transparent;
+}  
+.right::after {
+    left: -16px;
+}  
+.content {
+    padding: 20px 30px;
+    background-color: #111;
+    position: relative;
+    border-radius: 6px;  
+}
+.timeline h3 {
+    color: #dee2e6;
+}
+.timeline h4 {
+    color: #00b1e5;
+}
+.timeline a {
+    color: #fb5ee7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    transition: ease-in-out .3s;
+}
+.timeline a:hover {
+    color: #eee;
+}
+
+/********** Section parole **********/
+.parole {
+    background: #111;
+    color: #333;
+    padding: 10px;
+}
+.parole h4 {
+    text-align: center;
+    font-size: 4em;
+}
+.parole .blue {
+    font-size: .3em;
+}
+
+/********** Section projects **********/
+#projects {
+    padding-bottom: 100px;
+}
+#projects h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+#projects img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all ease-in 0.3s;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+#projects img:hover {
+    width: 100%;
+    height: 100%;
+    filter: none;
+}
+#projects .img-normal {
+    filter: none;
+}
+#projects .col-md-4 {
+    margin-bottom: 20px;
+}
+.modal-content {
+    background: #eee;
+    color: #333;
+    border: 1px solid #fff;
+}
+.modal-footer em {
+    padding-right: 10px;
+}
+.modal-footer .button-port {
+    box-shadow: 0 0 5px rgb(0,0,0,80%);
+}
+.modal-footer .button-port:hover {
+    box-shadow: 0 0 2px rgb(0,0,0,80%);
+}
+
+
+/********** Section contact **********/
+#contact {
+    min-height: 500px;
+    padding-bottom: 100px;
+}
+#contact .col-lg-10 {
+    margin: auto;
+}
+#contact h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.form-control {
+    font-size: .9em;
+    line-height: 1.5;
+    color: #adb5bd;
+    background-color: rgb(0 0 0 / .5);
+    border: 1px solid rgb(255 255 255 / .1);
+    border-radius: 0;
+}
+.form-control:focus {
+    color: #eee;
+    background-color: #111;
+}
+.star {
+    color: #51cff5;
+}
+.comments {
+    color: #fd919b;
+    margin-top: 5px;
+    padding: 5px;
+}
+.thank-you {
+    color: #e91e63;
+}
+#contact .button-port {
+    width: 200px;
+}
+
+/********** Section footer **********/
+.md-footer{
+    background: #111;
+    color: #333;
+    box-shadow: 0 -2px 4px 0px #000;
+    /* padding: 20px; */
+}
+.md-footer h3 {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 20px 0;
+    margin: 0;
+}
+.fa-chevron-up {
+    color: #00b1e5;
+    font-size: 2em;
+    transition: all ease-in-out .8s;
+}
+.fa-chevron-up:hover {
+    color: #fb5ee7;
+}
+.text-center {
+    text-align: center;
+}
+
+/********** Certifications **********/
+.certification {
+    padding-bottom: 100px;
+}
+.certification h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.certification .card {
+    position: relative;
+    background: #eee;
+    border: 1px solid #222;
+    border-radius: 0;    
+}
+.certification .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}  
+.certification .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(17 17 17 / 98%);
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+    transition: .5s ease;
+}
+.certification .card:hover .overlay {
+    bottom: 100%;
+    height: 0;
+}  
+.certification .text {
+    color: #ccc;
+    text-shadow: 0 0 3px #000;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.certification .card-text {
+    color: #010101!important;
+    text-shadow: -1px 1px #dce0e4;
+}
+.certification .card-footer {
+    border-top: 1px solid rgb(222 226 230 / .5);
+}
+.certification .text-muted {
+    color: rgb(1 1 1 / 0.7)!important;
+    color: #111;
+    text-shadow: -1px 1px #dce0e4;
+}
+.card-img, .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/***** Section myprojects *****/
+.inverse .overlay {    
+    background: linear-gradient(50deg, rgb(251 94 231 / .95), rgb(0 177 229 / .9));
+    width: 100%;
+    height:0;
+}
+.inverse .card:hover .overlay {
+    bottom: 100%;
+    height: 100%;
+}
+.inverse .text {
+    color: #f8f9fa;
+}
+.inverse .fas {
+    font-size: 2em;
+    color: #eee;
+    margin-top: 1em;
+    text-shadow: -3px 7px 5px rgb(0 0 0 / .50);
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+     /* Full-width containers */
+    .containerPanel {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+        
+    /* Make sure that all arrows are pointing leftwards */
+    .containerPanel::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #111 transparent transparent;
+    }      
+    /* Make sure all circles are at the same spot */
+        .left::after, .right::after {
+        left: 15px;
+    }
+        
+    /* Make all right containers behave like the left ones */
+        .right {
+        left: 0%;
+    }
+}
+
+/****** Media Queries ******/
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 575px) {
+    .btn-sm {margin: 10px auto;}    
+    .header-title{font-size: 2em;}
+    .header-subTitle{font-size:3em;}
+    .timeline h3{font-size:1.4em;}
+    .main-container .item{padding: 50px 30px 0 30px;}
+    .txtAngle{margin: 35px auto;}
+    .section-title{font-size:2em;padding: 130px 0 10px;}
+    .aProposGauche{width: 80%;margin: 20px auto;}
+    .searchMessage .align-right{text-align: center;}
+    .parole h4{font-size: 1.8em;}
+    .button-port{width: 100%;}
+    .spacec{width: auto;}
+    #projects h2{margin-top:0;}
+    #contact h2{font-size:1em;margin-top:0;}
+    .navbar-dark .navbar-nav .nav-link.active {
+        border-width: 1px;
+        border-right: 0;
+        border-style: solid;
+        border-image: linear-gradient(to top, rgba(0, 0, 0, 0), #fb5ee7, rgba(0, 0, 0, 0))1 100%;
+        padding-left: 7px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .header-subTitle{font-size:5em;}
+    .section-title {padding: 130px 0 20px;}
+    .aProposGauche {width: 80%;margin: 25px auto;}
+    .spacec{width: auto;}  
+    .searchMessage .align-right{text-align: center;}
+    .parole h4{font-size: 3em;}
+    #projects h2{margin-top:0;}
+    #contact h2{margin-top:0;}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {    
+    .btn-sm {
+        font-size: 1em;
+        margin-left: 1.5em;
+        margin-bottom: 0;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {    
+}
+
